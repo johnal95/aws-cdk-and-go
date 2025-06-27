@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Local environment
+.env
+
+# Output
+cdk.out
