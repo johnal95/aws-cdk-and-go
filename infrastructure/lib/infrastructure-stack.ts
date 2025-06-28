@@ -5,8 +5,8 @@ import { createVPC } from "./vpc.ts";
 import { createSecurityGroups } from "./security-groups.ts";
 import { createDatabaseInstance } from "./rds.ts";
 import { createECSCluster, createECSService } from "./ecs.ts";
+import { createCloudFrontDistribution } from "./cloudfront.ts";
 import { config } from "./config.ts";
-import { createCloudFrontDistribution } from "./cloudformation.ts";
 
 export class InfrastructureStack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
