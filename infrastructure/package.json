@@ -9,10 +9,14 @@
   "scripts": {
     "typecheck": "tsc",
     "cdk": "dotenv -- cdk",
-    "synth": "npm run cdk -- synth",
-    "diff": "npm run cdk -- diff",
-    "deploy": "npm run cdk -- deploy",
-    "destroy": "npm run cdk -- destroy"
+    "dev:synth": "npm run cdk -- synth Dev/InfrastructureStack",
+    "dev:diff": "npm run cdk -- diff Dev/InfrastructureStack",
+    "dev:deploy": "npm run cdk -- deploy Dev/InfrastructureStack",
+    "dev:destroy": "npm run cdk -- destroy Dev/InfrastructureStack",
+    "prod:synth": "npm run cdk -- synth Prod/InfrastructureStack",
+    "prod:diff": "npm run cdk -- diff Prod/InfrastructureStack",
+    "prod:deploy": "npm run cdk -- deploy Prod/InfrastructureStack",
+    "prod:destroy": "npm run cdk -- destroy Prod/InfrastructureStack"
   },
   "dependencies": {
     "aws-cdk": "2.1019.2",
